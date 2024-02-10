@@ -1,10 +1,14 @@
 # Code to print star tree
+
 n=10
 for i in range(0,n):
     print(" "*(n-i) + "*"*(2*i+1))
 
 for t in range(0,5):
     print(" "*(n)+"||")
+
+
+
 
 #Output:
 """
