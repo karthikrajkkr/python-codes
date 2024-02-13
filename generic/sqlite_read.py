@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-con = sqlite3.connect("/opt/jupyterhub/jupyterhub.sqlite")
+con = sqlite3.connect("/path/to/filename.sqlite")
 cur = con.cursor()
 
 # Queries to list all the tables, info about tables such as column names, and query the tables
