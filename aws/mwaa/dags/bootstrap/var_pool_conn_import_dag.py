@@ -94,7 +94,7 @@ def af_import(**kwargs):
 
 
 with DAG(
-    "wbd_bootstrap_dag", schedule_interval=None, start_date=datetime(2024, 2, 12)
+    "my_bootstrap_dag", schedule_interval=None, start_date=datetime(2024, 2, 12)
 ) as dag:
     start = DummyOperator(task_id="start")
 
