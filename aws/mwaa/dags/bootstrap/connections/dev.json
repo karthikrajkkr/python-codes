@@ -1,0 +1,14 @@
+{
+   "aws_test":{
+      "conn_type":"aws",
+      "description":"my aws connection",
+      "extra":{
+         "region_name":"us-east-2",
+         "role_arn":"arn:aws:iam::123456789:role/role-name"
+      }
+   },
+   "aws_emr":{
+      "conn_type":"emr",
+      "description":"my emr connection"
+   }
+}
