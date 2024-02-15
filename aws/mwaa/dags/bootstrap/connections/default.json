@@ -1,0 +1,6 @@
+{
+   "af_mysql":{
+      "conn_type":"mysql",
+      "description":"default mysql connection"
+   }
+}
