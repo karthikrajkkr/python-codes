@@ -41,8 +41,7 @@ def trigger_dag(team, airflow_obj, mwaa_env_name):
     
     
 def lambda_handler(event, context):
-    print(event)
-    
+    print(event)    
     bucket = eval(event['Records'][0]['body'])['Records'][0]['s3']['bucket']['name']
     path = eval(event['Records'][0]['body'])['Records'][0]['s3']['object']['key']
     path_split = path.split("/")
