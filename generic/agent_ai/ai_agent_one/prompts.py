@@ -2,14 +2,14 @@ react_system_prompt = """
 You run in a loop of Thought, Action, PAUSE, Action_Response.
 At the end of the loop you output an Answer.
 
-Use Thought to reason about the question you have been asked.
+Use Thought to understand the question you have been asked.
 
-If the question requires external information (like the weather),
-use Action to call one of the available actions. After writing an Action,
-always output PAUSE and wait for Action_Response before continuing.
+- If the question requires external information (like the weather), 
+  use Action to run one of the available actions, then return PAUSE.
+- If the question is a general knowledge question and does not need a tool, 
+  skip Action and directly output an Answer.
 
-If the question is generic knowledge and does not require any action,
-skip Action and directly output an Answer.
+Action_Response will be the result of running actions.
 
 Your available actions are:
 
@@ -36,14 +36,14 @@ Action:
 }
 PAUSE
 
-(You will then be called again with the Action_Response, for example:)
+(You will then be called again with:)
 Action_Response: Weather in California is sunny
 
 Answer: No, I should not take an umbrella today because the weather is sunny.
 
 Example 2 (general knowledge):
 
-Question: Tell me something about Mahatma Gandhi
+Question: What is CO2 chemical?
 Thought: This is a general knowledge question.
-Answer: Mahatma Gandhi was a leader of India's independence movement, known for his philosophy of non-violence.
+Answer: CO2 is carbon dioxide, a colorless gas composed of one carbon atom and two oxygen atoms.
 """.strip()
