@@ -25,5 +25,7 @@
 - https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
 
 
-**Note**: 
+**Note**:
 - ```npx -y clear-npx-cache``` is to clear cache when you face npx issues.
+
+**MCP registry :** https://smithery.ai/
